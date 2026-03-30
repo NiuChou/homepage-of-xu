@@ -6,7 +6,7 @@
 <title>Xu Xiaochu – Psychotherapie Frankfurt</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@200;300;400;500;600&family=Noto+Serif+SC:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Noto+Serif+SC:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 /* ================================================================
    DESIGN SYSTEM — inspired by nordend-psychotherapie.de
@@ -104,22 +104,25 @@ header.scrolled {
 
 header.scrolled .header-inner { padding-top: 14px; padding-bottom: 14px; }
 
-/* Logo — 行為 calligraphy */
+/* Logo — abstract symbol */
 .logo {
-  display: flex; align-items: center; gap: 16px;
+  display: flex; align-items: center; gap: 14px;
   text-decoration: none; cursor: pointer;
 }
 
 .logo-icon {
-  display: flex; flex-direction: column; align-items: center;
-  font-family: 'Ma Shan Zheng', cursive;
-  font-size: 26px; line-height: 1.15;
-  color: var(--sage-dark);
-  transition: color 0.5s var(--ease-out);
-  user-select: none;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.5s var(--ease-out);
 }
 
-.logo:hover .logo-icon { color: var(--teal); }
+.logo-icon svg {
+  width: 42px; height: 42px;
+  transition: all 0.5s var(--ease-out);
+}
+
+.logo:hover .logo-icon { transform: scale(1.05); }
+.logo:hover .logo-icon svg { stroke: var(--teal); }
 
 .logo-text {
   display: flex; flex-direction: column; line-height: 1.1;
@@ -127,7 +130,7 @@ header.scrolled .header-inner { padding-top: 14px; padding-bottom: 14px; }
 
 .logo-name {
   font-weight: 300; font-size: 20px; letter-spacing: 4px;
-  color: var(--sage); text-transform: lowercase;
+  color: var(--sage); text-transform: none;
 }
 
 .logo-sub {
@@ -841,9 +844,9 @@ footer p {
 <header id="mainHeader">
   <div class="header-inner">
     <a class="logo" onclick="goTo('home')">
-      <div class="logo-icon"><span>行</span><span>為</span></div>
+      <div class="logo-icon"><svg viewBox="0 0 42 42" fill="none" stroke="var(--sage-dark)" stroke-width="1.4" stroke-linecap="round"><circle cx="17" cy="21" r="13" opacity="0.6"/><circle cx="25" cy="21" r="13" opacity="0.6"/><path d="M21 10.5c-2.5 3-3.5 6.5-3.5 10.5s1 7.5 3.5 10.5c2.5-3 3.5-6.5 3.5-10.5s-1-7.5-3.5-10.5" opacity="0.35"/></svg></div>
       <div class="logo-text">
-        <span class="logo-name">xu xiaochu</span>
+        <span class="logo-name">Xu Xiaochu</span>
         <span class="logo-sub">Psychotherapie</span>
       </div>
     </a>
