@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Xu Xiaochu – Psychotherapie Frankfurt</title>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Noto+Sans+SC:wght@200;300;400;500&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Nunito:wght@200;300;400;500;600&family=Noto+Sans+SC:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 /* ================================================================
    DESIGN SYSTEM — inspired by nordend-psychotherapie.de
@@ -110,11 +112,9 @@ header.scrolled .header-inner { padding-top: 14px; padding-bottom: 14px; }
 
 .logo-icon {
   display: flex; flex-direction: column; align-items: center;
-  writing-mode: vertical-rl; text-orientation: upright;
-  font-family: 'Ma Shan Zheng', 'STKaiti', 'KaiTi', cursive;
-  font-size: 26px; line-height: 1;
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 26px; line-height: 1.15;
   color: var(--sage-dark);
-  letter-spacing: 2px;
   transition: color 0.5s var(--ease-out);
   user-select: none;
 }
@@ -841,7 +841,7 @@ footer p {
 <header id="mainHeader">
   <div class="header-inner">
     <a class="logo" onclick="goTo('home')">
-      <div class="logo-icon">行為</div>
+      <div class="logo-icon"><span>行</span><span>為</span></div>
       <div class="logo-text">
         <span class="logo-name">xu xiaochu</span>
         <span class="logo-sub">Psychotherapie</span>
