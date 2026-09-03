@@ -741,7 +741,12 @@ p + p { margin-top: var(--space-sm); }
 
 .cost-detail { font-size: 14px; color: var(--text-muted); }
 
-.cost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+#page-costs .page-body { max-width: 1080px; }
+
+.cost-price { margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(181, 204, 191, 0.25); }
+.cost-price-label { font-size: 15px; color: var(--text-light); }
+.cost-card .price-display { font-size: 34px; margin: 6px 0 10px; }
+.cost-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 
 .cost-card {
   background: rgba(253, 252, 250, 0.5);
@@ -1337,22 +1342,23 @@ footer p {
     <p><span class="de">Transparente Kostenübersicht</span><span class="zh">透明的费用说明</span></p>
   </div>
   <div class="page-body">
-    <div class="cost-hero reveal">
-      <h3><span class="de">Einzelsitzung · 50 Minuten</span><span class="zh">单次治疗 · 50分钟</span></h3>
-      <div class="price-display">170 &#8364; <small>/ 50 min</small></div>
-      <p class="cost-detail">
-        <span class="de">Gebührenordnung für Psychotherapeut:innen (GOP) · 3,5-facher Satz</span>
-        <span class="zh">依据心理治疗师收费标准 (GOP) · 3.5倍因子</span>
-      </p>
-    </div>
     <div class="cost-grid stagger">
+      <div class="cost-card">
+        <h3><span class="de">Gesetzliche Krankenkassen</span><span class="zh">法定医疗保险</span></h3>
+        <p><span class="de">Als approbierte Psychologische Psychotherapeutinnen und -therapeuten haben wir die Berechtigung über die gesetzlichen Krankenkassen abzurechnen. Bitte bringen Sie Ihre Versichertenkarte zum Termin mit.</span><span class="zh">作为注册心理治疗师，我们具备与法定医疗保险直接结算的资格。请您就诊时携带医保卡。</span></p>
+      </div>
       <div class="cost-card">
         <h3><span class="de">Private Krankenversicherung</span><span class="zh">私人医疗保险</span></h3>
         <p><span class="de">Die Erstattung psychotherapeutischer Leistungen hängt von Ihrem individuellen Versicherungsvertrag ab. Bitte informieren Sie sich vor Behandlungsbeginn bei Ihrer Versicherung über die Konditionen.</span><span class="zh">报销范围取决于您的保险合同。建议在开始治疗前向保险公司咨询具体的报销条款。您可以作为私保患者直接接受治疗。</span></p>
       </div>
       <div class="cost-card">
-        <h3><span class="de">Gesetzliche Krankenkassen</span><span class="zh">法定医疗保险</span></h3>
-        <p><span class="de">Als approbierte Psychologische Psychotherapeutinnen und -therapeuten haben wir die Berechtigung über die gesetzlichen Krankenkassen abzurechnen. Bitte bringen Sie Ihre Versichertenkarte zum Termin mit.</span><span class="zh">作为注册心理治疗师，我们具备与法定医疗保险直接结算的资格。请您就诊时携带医保卡。</span></p>
+        <h3><span class="de">Selbstzahler</span><span class="zh">自费</span></h3>
+        <p><span class="de">Wenn Sie als Selbstzahler in die Praxis kommen, entfallen Formalitäten mit den Versicherungen und die Therapie kann sofort beginnen. Dies kann sinnvoll sein, wenn man z.B. die Krankenkasse nicht darüber informieren möchte, dass man psychotherapeutische Behandlung in Anspruch nehmen möchte.</span><span class="zh">自费就诊无需与保险公司办理任何手续，治疗可立即开始。若您不希望医保公司知晓您正在接受心理治疗，这种方式尤为合适。</span></p>
+        <div class="cost-price">
+          <span class="cost-price-label"><span class="de">Einzelsitzung ·</span><span class="zh">单次治疗 ·</span></span>
+          <div class="price-display">170 &#8364; <small>/ 50 min</small></div>
+          <p class="cost-detail"><span class="de">Gebührenordnung für Psychotherapeut:innen (GOP) · 3,5-facher Satz</span><span class="zh">依据心理治疗师收费标准 (GOP) · 3.5倍因子</span></p>
+        </div>
       </div>
     </div>
     <div style="text-align:center; margin-top:48px;" class="reveal">

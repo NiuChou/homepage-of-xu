@@ -1,0 +1,7 @@
+{
+  "tool_name": "mcp__Claude_Browser__browser_batch",
+  "tool_input_preview": "{\"actions\":[{\"name\":\"resize_window\",\"input\":{\"width\":1440,\"height\":1000,\"tabId\":\"tab-1\"}},{\"name\":\"javascript_tool\",\"input\":{\"action\":\"javascript_exec\",\"tabId\":\"tab-1\",\"text\":\"goTo('costs'); await new...",
+  "error": "actions[0] (resize_window) failed: Preview tab tab-1 is no longer open. (0 completed, 2 remaining)",
+  "timestamp": "2026-09-03T17:27:51.364Z",
+  "retry_count": 2
+}
